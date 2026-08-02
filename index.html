@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Cozy Crochet</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Pacifico&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
+
+body{
+background:#fff7f5;
+color:#444;
+}
+
+header{
+background:linear-gradient(135deg,#ffd6e7,#ffe9c8);
+padding:25px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+}
+
+.logo{
+font-family:Pacifico;
+font-size:34px;
+color:#d63384;
+}
+
+nav a{
+text-decoration:none;
+margin-left:20px;
+color:#555;
+font-weight:600;
+}
+
+.hero{
+height:90vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+background:url("images/hero.jpg") center/cover;
+text-align:center;
+}
+
+.hero h1{
+font-size:60px;
+color:white;
+text-shadow:2px 2px 10px black;
+}
+
+.hero p{
+font-size:22px;
+color:white;
+margin:20px;
+}
+
+.hero button{
+padding:15px 40px;
+border:none;
+border-radius:50px;
+background:#ff6fa5;
+color:white;
+font-size:18px;
+cursor:pointer;
+}
+
+section{
+padding:70px 8%;
+}
+
+.title{
+font-size:40px;
+text-align:center;
+margin-bottom:50px;
+color:#d63384;
+font-family:Pacifico;
+}
+
+.products{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:35px;
+
+}
+
+.card{
+
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 10px 30px rgba(0,0,0,.1);
+transition:.4s;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.card img{
+
+width:100%;
+height:280px;
+object-fit:cover;
+
+}
+
+.info{
+padding:20px;
+}
+
+.info h3{
+color:#d63384;
+}
+
+.price{
+
+font-size:24px;
+font-weight:bold;
+margin:15px 0;
+
+}
+
+.btn{
+
+display:inline-block;
+padding:12px 28px;
+background:#ff6fa5;
+color:white;
+text-decoration:none;
+border-radius:40px;
+
+}
+
+.sketches{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+
+}
+
+.sketch{
+
+background:white;
+padding:15px;
+border-radius:20px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+}
+
+.sketch img{
+
+width:100%;
+height:350px;
+object-fit:cover;
+border-radius:15px;
+
+}
+
+.about{
+
+display:flex;
+align-items:center;
+gap:50px;
+flex-wrap:wrap;
+
+}
+
+.about img{
+
+width:400px;
+border-radius:20px;
+
+}
+
+.about-text{
+
+flex:1;
+
+}
+
+.contact{
+
+text-align:center;
+
+}
+
+input,textarea{
+
+width:100%;
+padding:15px;
+margin:10px 0;
+border-radius:12px;
+border:1px solid #ccc;
+
+}
+
+footer{
+
+background:#ffd6e7;
+padding:30px;
+text-align:center;
+margin-top:60px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">🧶 Cozy Crochet</div>
+
+<nav>
+
+<a href="#">Home</a>
+<a href="#products">Crochet</a>
+<a href="#sketch">Sketches</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+
+</nav>
+
+</header>
+
+<div class="hero">
+
+<h1>Handmade with Love</h1>
+
+<p>Beautiful Crochet Creations & Pencil Sketches</p>
+
+<button>Shop Now</button>
+
+</div>
+
+<section id="products">
+
+<h2 class="title">Crochet Collection</h2>
+
+<div class="products">
+
+<div class="card">
+
+<img src="images/bunny.jpg">
+
+<div class="info">
+
+<h3>Crochet Bunny</h3>
+
+<p>Soft handmade bunny.</p>
+
+<div class="price">₹599</div>
+
+<a href="#" class="btn">Buy Now</a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="images/flower.jpg">
+
+<div class="info">
+
+<h3>Flower Bouquet</h3>
+
+<p>Everlasting crochet flowers.</p>
+
+<div class="price">₹799</div>
+
+<a href="#" class="btn">Buy Now</a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="images/keychain.jpg">
+
+<div class="info">
+
+<h3>Mini Keychain</h3>
+
+<p>Cute handmade keychains.</p>
+
+<div class="price">₹249</div>
+
+<a href="#" class="btn">Buy Now</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="sketch">
+
+<h2 class="title">Sketch Gallery ✏️</h2>
+
+<div class="sketches">
+
+<div class="sketch">
+
+<img src="images/sketch1.jpg">
+
+<h3 style="margin-top:15px;">Portrait Sketch</h3>
+
+</div>
+
+<div class="sketch">
+
+<img src="images/sketch2.jpg">
+
+<h3 style="margin-top:15px;">Nature Drawing</h3>
+
+</div>
+
+<div class="sketch">
+
+<img src="images/sketch3.jpg">
+
+<h3 style="margin-top:15px;">Custom Artwork</h3>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="title">About Me</h2>
+
+<div class="about">
+
+<img src="images/about.jpg">
+
+<div class="about-text">
+
+<h2>Hello! 👋</h2>
+
+<p>
+
+I create handmade crochet flowers, plushies,
+keychains and beautiful pencil sketches.
+Every piece is crafted with care and passion.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="title">Contact Me</h2>
+
+<div class="contact">
+
+<input placeholder="Your Name">
+
+<input placeholder="Email">
+
+<textarea rows="6" placeholder="Message"></textarea>
+
+<a href="#" class="btn">Send Message</a>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>🧶 Cozy Crochet</h3>
+
+<p>Made with ❤️ Handmade by You</p>
+
+</footer>
+
+</body>
+</html>
